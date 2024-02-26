@@ -1,4 +1,7 @@
 package com.auditreport.report.repository;
 
-public interface AuditRepository {
+import com.auditreport.report.model.AuditModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AuditRepository extends JpaRepository<AuditModel, Long> {
 }
