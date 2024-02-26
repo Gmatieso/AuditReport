@@ -24,7 +24,7 @@ public class AuditService {
     }
 
     // Get an audit
-    public  AuditModel getAudit(Long id) {
+    public  AuditModel getAudit(Long id, AuditModel auditModel) {
         Optional<AuditModel> optionalAuditModel = auditRepository.findById(id);
         if (optionalAuditModel.isPresent()) {
             return optionalAuditModel.get();
